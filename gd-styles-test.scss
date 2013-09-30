@@ -1,0 +1,1237 @@
+
+
+//$powerColor : #81BB31;
+//$darkPowerColor: #396600;
+
+body.razadmin .highlight{background-color:#ff77ef}
+body.razadmin .highlight a.button,body.razadmin .highlight img{border-color:#ff77ef}
+body {
+	margin: 0 auto;
+	padding: 0px;
+	font-family: Lato, Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	background: #eaeaea;
+	background-image: url('http://downloads.razoo.com/media/givemn/GTMD13/images/body-bg.png');
+	background-repeat: repeat-y;
+	background-position: center;
+}
+.content,.content .section{
+	padding:0;
+	margin:0 auto;
+	background-image:none;
+}
+.main{
+	padding:0 !important;
+	width:100% !important;
+	float:none !important;
+	display:block !important;
+}
+.main:after{
+	content:"  ";
+	display:block;
+	clear:both;
+	padding:0 0 30px 0;
+}
+.content{
+	width:100%;
+	background-position:bottom center;
+	overflow:hidden;
+}
+.content img {max-height:370px;}
+.content a{color:$powerColor}
+.content a:link{color:$powerColor}
+.content a:visited{color:$powerColor}
+.content a:hover{color:$powerColorHover !important;}
+.content hr {
+	border-top: 1px solid #DCDBC8;
+	border-bottom: none;
+}
+#gd-header{
+	position:relative;
+	margin:0 0px
+}
+#gd-header .box{-moz-border-radius:15px;
+-webkit-border-radius:15px;
+border-radius:15px;
+background-color:#c4e5aa;
+position:absolute;
+margin:0 0 15px 0;
+padding:30px;
+border:2px solid #ccc}
+#gd-header .box.mainCol{width:530px;
+left:0}
+#gd-header .box.sideCol{width:270px;
+right:0}
+#gd-header h1{position:absolute;
+z-index:100;
+top:40px;
+left:35px}
+#gd-header h1 a{display:block;
+width:525px;
+height:207px;
+background:url(http://media.razoo.com/media/givemn/GTMD12/images/logo.png) no-repeat;
+text-indent:-10000px;
+overflow:hidden}
+#gd-stats{
+	font-family:Lato, Arial, Helvetica, sans-serif;
+	font-weight:700;
+	font-size:10px;
+	width:600px;
+	height:45px;
+	position:absolute;
+	left:0px;
+	bottom:115px;
+	font-weight:bold;
+	line-height:normal;
+}
+#gd-stats > div{
+	height:45px;
+	float:left;
+	white-space:nowrap;
+	position:relative;
+	min-width:190px;
+}
+#gd-stats > div strong{
+	white-space:nowrap;
+	font-size:10px;
+	line-height:10px;
+	color:#fff !important;
+	position:absolute;
+	top:0em;
+	left:10px;
+}
+#gd-stats > div em{
+	font-family:Lato, Arial, Helvetica, sans-serif;
+	font-family: Lato, Arial, Helvetica, sans-serif;
+	position: relative;
+	line-height: 40px;
+	margin-left: 10px;
+	font-weight: 300;
+	font-size: 40px;
+}
+#gd-stats > div.donors{min-width:140px}
+#gd-stats > div.dontaions{min-width:140px}
+#gd-stats div + div{/*border-left:2px solid #fff;*/
+padding-left:10px}
+#gd-header #gd-nav{
+	font-family:Lato, Arial, Helvetica, sans-serif;
+	font-weight:700;
+	-webkit-border-bottom-left-radius:15px;
+	-moz-border-radius-bottom-left:15px;
+	border-bottom-left-radius:15px;
+	-webkit-border-bottom-right-radius:15px;
+	-moz-border-radius-bottom-right:15px;
+	border-bottom-right-radius:15px;
+	position:absolute;
+	left:0px;
+	border:2px solid #acd380;
+	width:590px;
+	overflow:hidden;
+	margin:0 0 15px 0;
+	font-size:10px;
+	top:auto;
+	bottom:3px;
+	right:auto;
+	padding:5px 0px 5px;
+	background-color:#c4e5aa;
+}
+#gd-header #gd-nav ul{
+	margin:0 auto;
+	padding:5px 0;
+	white-space:nowrap;
+	text-align:center;
+}
+#gd-header #gd-nav ul li + li{border-left:2px solid #6c6d6d}
+#gd-header #gd-nav ul li + li a{padding-left:4px}
+#gd-header #gd-nav ul li{display:inline;
+margin:0;
+padding:0;
+list-style:none}
+#gd-header #gd-nav ul li a{padding-right:8px;
+font-size:inherit;
+font-weight:bold}
+#gd-header #gd-nav ul li a,#gd-header #gd-nav ul li:link{display:inline;
+color:#6c6d6d;
+text-decoration:none;
+text-transform:uppercase}
+#gd-header #gd-nav ul li a:visited,#gd-header #gd-nav ul li:link:visited{color:#6d6d6d}
+#gd-header #gd-nav ul li a:hover,#gd-header #gd-nav ul li:link:hover{color:#202020;
+text-decoration:underline}
+#gd-social{position:absolute;
+margin:0 0 15px 0;
+padding:15px 0px;
+bottom:-125px;
+right:0px;
+width:330px;
+height:60px;
+z-index:9;
+display:none;}
+#gd-social.vertical{top:65px;
+-moz-box-shadow:1px 1px 8px #bbb;
+-webkit-box-shadow:1px 1px 8px #bbb;
+box-shadow:1px 1px 8px #bbb;
+width:80px;
+height:300px}
+#gd-social.vertical.left{left:-95px}
+#gd-social.vertical.left .addthis_toolbox{display:block}
+#gd-social.vertical.right{right:-95px}
+#gd-social.vertical.right .addthis_toolbox{display:block}
+#gd-social.vertical ._facebook{top:15px;
+left:15px}
+#gd-social.vertical ._twiter{top:90px;
+left:12px}
+#gd-social.vertical ._google{top:165px;
+left:15px}
+#gd-social.vertical ._addthis{top:240px;
+left:15px}
+#gd-social.box{padding-bottom:20px}
+#gd-social ._facebook,#gd-social ._twiter,#gd-social ._google,#gd-social ._addthis{display:block;
+position:absolute;
+width:50px;
+height:60px;
+top:15px}
+#gd-social ._facebook > a,#gd-social ._twiter > a,#gd-social ._google > a,#gd-social ._addthis > a{display:block;
+position:relative;
+width:50px;
+height:60px}
+#gd-social ._addthis{left:26px}
+#gd-social ._facebook{left:102px}
+#gd-social ._twiter{left:178px}
+#gd-social ._google{left:254px}
+#gd-social.small{-moz-border-radius:15px;
+-webkit-border-radius:15px;
+border-radius:15px;
+position:absolute;
+background:#fff;
+border:2px solid #ccc;
+width:280px;
+height:90px;
+top:168px}
+.gd{line-height:1.5;
+font-size:13px;
+color:#000}
+.gd .col-3rd{width:30%}
+.gd .col-3rd + .col-3rd{margin-left:4%}
+.gd a{color:#6db336}
+.gd a:hover{color:#ffffff}
+.gd a.button{-moz-border-radius:15px;
+-webkit-border-radius:15px;
+border-radius:15px;
+-webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none;
+background-image:url(http://media.razoo.com/media/givemn/GTMD12/images/button.jpg) repeat-y center;
+background-image:none;
+background-image:-moz-linear-gradient(#6db336 0%, #6db336 100%);
+background-image:-o-linear-gradient(#6db336 0%, #6db336 100%);
+background-image:-ms-linear-gradient(#6db336 0%, #6db336 100%);
+background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #6db336), color-stop(100%, #6db336));
+background-image:-webkit-linear-gradient(#6db336 0%, #6db336 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6db336', endColorstr='#6db336');
+-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#6db336', endColorstr='#6db336')";
+padding:10px 15px;
+border:2px solid #6db336;
+text-transform:none;
+color:#fff}
+.gd a.button:hover{color:#fff !important;
+background-color:$powerColorHover !important;}
+.gd a.pdf{padding-right:30px;
+background-image:url(http://media.razoo.com/media/givemn/GTMD12/images/icon-pdf.gif)}
+.gd a.button strong{background:none;
+padding:0}
+.gd .button.large{-moz-border-radius:15px;
+-webkit-border-radius:15px;
+border-radius:15px;
+background-image:url(http://media.razoo.com/media/givemn/GTMD12/images/button.jpg) repeat-y;
+background-image:none;
+background-image:-moz-linear-gradient(#6db336 0%, #6db336 100%);
+background-image:-o-linear-gradient(#6db336 0%, #6db336 100%);
+background-image:-ms-linear-gradient(#6db336 0%, #6db336 100%);
+background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #6db336), color-stop(100%, #6db336));
+background-image:-webkit-linear-gradient(#6db336 0%, #6db336 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6db336', endColorstr='#6db336');
+-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#6db336', endColorstr='#6db336')";
+position:absolute;
+bottom:-35px;
+left:50%;
+display:block;
+width:200px;
+padding:15px 0px;
+margin:0 0 0 -140px;
+text-align:center;
+text-transform:uppercase;
+color:#fff;
+text-decoration:none;
+font-size:12px;
+font-weight:normal;
+line-height:normal}
+.gd .button.large strong{font-size:18px}
+.gd .button.large.alignright{right:auto;
+left:50%;
+margin:0 0 0 10px;
+width:40%}
+.gd .button.large.alignleft{left:auto;
+right:50%;
+margin:0 10px 0 0;
+width:40%}
+.gd .button.large:hover{background:$powerColorHover;
+color:#fff;}
+.gd h1{margin-bottom:20px;
+color:$powerColor;
+font-size:32px;
+font-family:Lato, Arial, Helvetica, sans-serif;
+font-weight:400}
+.gd h2,.gd h3,.gd h4,.gd h5,.gd h6{font-family:Lato, Arial, Helvetica, sans-serif;
+font-weight:400;color:$powerColor;}
+.gd h2{margin-bottom:15px;
+margin-top:25px;
+font-size:24px;
+font-weight:400;}
+.gd h3{margin-bottom:10px;
+margin-top:20px;
+font-size:22px;
+font-weight:400;
+line-height:1.2}
+.gd h3 a{
+text-decoration:none}
+.gd h4{margin-bottom:6px;
+font-size:18px;
+font-weight:400;
+}
+.gd h5{margin:0 0 15px 0;}
+.gd h1 strong,.gd h2 strong,.gd h3 strong,.gd h4 strong,.gd h5 strong{color:$powerColor}
+.gd ul{margin:0 0 1.5em 2em;
+padding:0 0 1em 0}
+.gd ul li{list-style:circle}
+.gd ul.feed-entries{margin:0;
+padding:0}
+.gd ul.feed-entries li{overflow:hidden;
+margin:0 0 30px 0;
+padding:0 0 20px 0;
+list-style:none;
+border-bottom:1px solid #ddd}
+.gd ul.feed-entries li p.more{margin-top:1em}
+.gd ul.feed-entries li .meta{font-size:11px;
+margin:0 0 20px 0}
+.gd ol li{margin:0 0 0.75em 2em;
+list-style-position:outside;
+list-style:decimal}
+.gd blockquote{position:relative;
+margin:30px 0;
+padding:0 10px;
+font-size:22px;
+color:#a7d87f;
+font-weight:normal;
+background:url(http://media.razoo.com/media/givemn/GTMD12/images/blockquote.gif) no-repeat top center;
+min-height:200px}
+.gd blockquote cite{padding:13px 0 0 0;
+display:block;
+text-align:right;
+font-size:13px;
+color:#c4e5aa;
+font-weight:bold;
+font-style:normal}
+.gd blockquote strong{color:#89cc55}
+.gd .top small{display:block;
+font-size:13px;
+font-weight:normal}
+.inset{background-color:#e2f2d4;
+border-left-color:#abdb86;
+border-top-color:#abdb86;
+border-bottom-color:#fff;
+border-right-color:#fff;
+padding:15px}
+a.mosaic{margin:4px;
+display:inline-block;
+float:left}
+#gd-content{float:left;
+width:590px;
+margin-top:-200px}
+#gd-content .col{position:relative}
+#gd-content .col .box{background:none;
+background:#fafbf0}
+#gd-content .col-left{margin:0 0 0 0px;
+width:285px;
+float:left}
+#gd-content .col-right{margin:0 0px 0 0;
+width:285px;
+float:right}
+#gd-content .box{
+	position:relative;
+	margin:0 0 0px 0;
+	padding:0px 30px 10px 30px;
+	width:530px;
+	background:#fff;
+}
+#gd-content .box .col-left,#gd-content .box .col-right{width:255px}
+#gd-content .box h1.top,#gd-content .box h2.top{
+background-color:#fff}
+#gd-content .box h1.top{margin:0px -30px 20px -30px;
+padding:0px 30px 10px 30px}
+#gd-content .box h2.top{margin:-30px -30px 30px -30px;
+padding:25px 30px 20px 30px}
+#gd-content .box.alternate{width:auto;
+padding:30px 20px 30px 30px;
+border-color:#ccc;
+min-height:335px}
+#gd-content .box.promo .intro{margin:-30px -20px 20px -30px;
+padding:20px 20px 10px 30px;
+color:#666;
+font-size:18px;
+background-color:#fff}
+#gd-content .box.promo .intro strong{font-size:24px}
+#gd-content .box.promo .inner{margin:0;
+padding:0 0 1px 0;
+min-height:160px}
+#gd-content .box.promo .inner a{color:#6db336;
+text-decoration:none}
+#gd-content .box.promo .inner a:visited{color:#6bc326}
+#gd-content .box.promo .inner a:hover{color:#7c36b3;
+text-decoration:underline}
+#gd-content .box.promo .inner a.button{color:#fff}
+#gd-content .box.promo .inner a.button:visited{color:#fff}
+#gd-content .box.promo .inner a.button:hover{color:#fff}
+#gd-sidebar{
+	float:right;
+	width:330px;
+	margin-top:-234px;
+	border-left: 1px solid #efefef;
+	background-color:#fff;
+	padding-top:35px;
+}
+#gd-sidebar h3 {margin-top:-40px}
+#gd-sidebar .box{
+position:relative;
+padding:25px;
+background:#fff}
+#gd-sidebar .box h2.top,#gd-sidebar .box h1.top{margin:-25px -25px 20px -25px;
+padding:25px 25px 20px 25px;
+line-height:1.2;
+background-color:#c4e5aa;
+color:#89cc55}
+#gd-sidebar .box h2.top .hr,#gd-sidebar .box h1.top .hr{border-top:2px solid #e2f2d4;
+margin:2em 0 1em 0}
+#gd-sidebar .social-updates{margin:20px 0 0px}
+#gd-sidebar #social-box{padding-bottom:0}
+#gd-sidebar .button{color:#fff}
+#gd-sidebar .button:hover{color:#fff}
+#gd-sidebar .button.large{
+	display:block;
+	margin:0 0 30px 0;
+	text-align:center;
+	font-weight:normal;
+	padding:15px;
+	text-transform:uppercase;
+}
+#gd-sidebar .button.large strong{font-size:20px}
+#gd-sidebar .button.large.top{margin:0 0 10px}
+#gd-sidebar #twitter-updates .twtr-widget{font-size:14px !important}
+#gd-sidebar #twitter-updates .twtr-widget .twtr-tweet{border-bottom:0 !important;
+font-size:13px !important}
+#gd-sidebar #twitter-updates .twtr-widget .twtr-tweet .twtr-tweet-wrap{padding:0 0 0 40px !important;
+margin:0 0 10px 0 !important}
+#gd-sidebar #twitter-updates .twtr-widget em{font-size:11px}
+#gd-sidebar #twitter-updates .twtr-hd,#gd-sidebar #twitter-updates .twtr-ft{display:none !important}
+#gd-sidebar #twitter-updates .twtr-avatar{position:absolute;
+left:0;
+display:block}
+#gd-sidebar #twitter-updates .twtr-doc a{color:#6db336 !important;
+text-decoration:none !important}
+#gd-sidebar #twitter-updates .twtr-doc a:hover{color:#7c36b3 !important;
+text-decoration:underline !important}
+#gd-sidebar #twitter-updates .twtr-tweet-text{margin-left:40px !important}
+#gd-sidebar #twitter-updates .twtr-tweet-text a{color:#6db336;
+text-decoration:none !important}
+#gd-sidebar #twitter-updates .twtr-tweet-text a:visited{color:#6bc326 !important}
+#gd-sidebar #twitter-updates .twtr-tweet-text a:hover{color:#7c36b3 !important;
+text-decoration:underline !important}
+#gd-sidebar #twitter-updates .twitter{display:inline-block;
+height:22px;
+line-height:22px;
+padding-left:30px;
+color:#666;
+background:url(http://media.razoo.com/media/givemn/GTMD12/images/icon-twitter.gif) no-repeat}
+#gd-sidebar ul.feed-entries li > *{display:none}
+#gd-sidebar ul.feed-entries li h3{display:block}
+#gd-sidebar .nav{text-align:center;
+font-size:14px;
+font-weight:bold;
+line-height:1.7;
+text-transform:uppercase;
+color:#fff;
+background-color:#6db336}
+#gd-sidebar .nav a{color:#fff}
+#gd-sidebar .nav a:hover{color:#e1efd6}
+#gd-sidebar .nav ul{margin:0;
+padding:0}
+#gd-sidebar .nav ul li{display:inline-block;
+margin:0 10px;
+list-style:none}
+.gd-signup{background:#a7d87f;
+background-image:-moz-linear-gradient(#c4e5aa 0%, #a7d87f 100%);
+background-image:-o-linear-gradient(#c4e5aa 0%, #a7d87f 100%);
+background-image:-ms-linear-gradient(#c4e5aa 0%, #a7d87f 100%);
+background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #c4e5aa), color-stop(100%, #a7d87f));
+background-image:-webkit-linear-gradient(#c4e5aa 0%, #a7d87f 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c4e5aa', endColorstr='#a7d87f');
+-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#c4e5aa', endColorstr='#a7d87f')";
+-moz-border-radius:15px;
+-webkit-border-radius:15px;
+border-radius:15px;
+border:2px solid #89cc55}
+.gd-signup .ui-widget-header{background:none;
+border:0;
+color:#fff;
+font-family:arial;
+font-size:30px;
+padding:5px 10px;
+text-transform:uppercase}
+.gd-signup .ui-dialog-titlebar-close{top:15px;
+right:10px}
+.gd-signup .ui-widget-content{border:0;
+-webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none}
+form.pc-signup input{width:350px}
+#pc-signup-status{margin:10px 0 0 0}
+#pc-signup-status.error{color:white;
+background:none}
+#pc-signup-fields{position:relative;
+height:40px}
+#pc-signup-fields input{position:absolute;
+top:5px;
+left:0}
+#pc-signup-fields button{position:absolute;
+top:-2px;
+right:40px}
+
+
+/*
+
+
+div.leaderboard{-moz-border-radius:15px;
+-webkit-border-radius:15px;
+border-radius:15px;
+position:relative;
+background:#f8fcf5;
+border:2px solid #76bc3f;
+padding:0 0 50px 0}
+div.leaderboard h2{-webkit-border-top-left-radius:12px;
+-moz-border-radius-top-left:12px;
+border-top-left-radius:12px;
+-webkit-border-top-right-radius:12px;
+-moz-border-radius-top-right:12px;
+border-top-right-radius:12px;
+position:relative;
+z-index:1;
+color:#301b04;
+background:#9fd177;
+padding:30px 30px 15px 30px;
+margin:0 0 -45px 0}
+div.leaderboard h2 small{font-size:14px;
+display:block}
+div.leaderboard > .more{position:absolute;
+z-index:100;
+bottom:20px;
+right:30px;
+height:30px;
+padding:0 30px;
+line-height:30px}
+div.leaderboard .ui-tabs-panel > .more{position:absolute;
+z-index:100;
+bottom:-20px;
+right:30px;
+height:30px;
+padding:0 30px;
+line-height:30px}
+div.leaderboard > .info{position:absolute;
+margin:10px 0 0 30px;
+font-size:12px;
+color:$darkPowerColor;}
+div.leaderboard.alignright,div.leaderboard.alignleft{width:280px}
+div.leaderboard.alignright table,div.leaderboard.alignleft table{margin-bottom:20px}
+div.leaderboard.alignright table.leaderboard h3,div.leaderboard.alignleft table.leaderboard h3{font-size:12px}
+div.leaderboard.alignright table.leaderboard .rank h3,div.leaderboard.alignleft table.leaderboard .rank h3{font-size:12px !important;
+color:$darkPowerColor}
+div.leaderboard.alignright table.leaderboard .donorCount,div.leaderboard.alignright table.leaderboard .donorAmount,div.leaderboard.alignright table.leaderboard .orgName div,div.leaderboard.alignright table.leaderboard tfoot th,div.leaderboard.alignleft table.leaderboard .donorCount,div.leaderboard.alignleft table.leaderboard .donorAmount,div.leaderboard.alignleft table.leaderboard .orgName div,div.leaderboard.alignleft table.leaderboard tfoot th{display:none}
+div.leaderboard.alignright table.leaderboard td.orgName,div.leaderboard.alignright table.leaderboard th.orgName,div.leaderboard.alignleft table.leaderboard td.orgName,div.leaderboard.alignleft table.leaderboard th.orgName{width:100%;
+position:relative}
+div.leaderboard.alignright{float:right}
+div.leaderboard.alignleft{float:left}
+div.leaderboard .tabs{background:#6aa939;
+margin:0;
+padding:40px 0 0 0;
+position:relative;
+border:0}
+div.leaderboard .tabs > ul{position:absolute;
+z-index:100;
+top:49px;
+height:50px;
+margin:0;
+padding:0;
+left:30px}
+div.leaderboard .tabs > ul > div{padding:0}
+div.leaderboard .tabs > ul .ui-widget-header{background:none;
+border:0}
+div.leaderboard .tabs > ul li{margin:0 10px 0 0;
+padding:0;
+border:0;
+list-style:none;
+background:#6aa939;
+color:#bade9e;
+font-weight:bold}
+div.leaderboard .tabs > ul li a{display:block;
+padding:0px 10px;
+height:30px;
+line-height:30px;
+text-decoration:none;
+color:#bade9e;
+font-size:14px}
+div.leaderboard .tabs > ul li.ui-tabs-selected{padding-bottom:0;
+background-color:#6aa939}
+div.leaderboard .tabs > ul li.ui-tabs-selected a{color:#bade9e;
+border:0 !important}
+.minileaderboard table.leaderBoard th.orgName{font-size:12px}
+.minileaderboard table.leaderBoard th.orgName strong{font-size:16px}
+table.leaderBoard{padding:0;
+margin:0px 0 0 0;
+position:relative;
+z-index:2}
+table.leaderBoard tbody td[colspan="5"]{padding:10px 0px 10px 30px}
+table.leaderBoard tfoot .org_leaderboard_filter{white-space:nowrap}
+table.leaderBoard .fundraiserCount{display:none}
+table.leaderBoard thead tr{background-color:#6aa939}
+table.leaderBoard thead tr,table.leaderBoard thead th{padding:0;
+height:40px;
+border-bottom:none;
+background-color:transparent;
+color:#333}
+table.leaderBoard thead th.rank{text-indent:-10000px}
+table.leaderBoard thead th.orgName{text-indent:-10000px}
+table.leaderBoard th{vertical-align:bottom}
+table.leaderBoard th.donorCount,table.leaderBoard th.donorAmount{font-weight:normal;
+font-size:11px;
+color:#301b04;
+padding-bottom:10px}
+table.leaderBoard th.orgName{color:#6f3f09}
+table.leaderBoard .donorCount strong{font-weight:normal}
+table.leaderBoard .donorAmount{font-weight:bold !important}
+table.leaderBoard th,table.leaderBoard th.orgName strong{font-weight:normal;
+color:#6f3f09;
+font-size:24px}
+table.leaderBoard tr,table.leaderBoard td{background-color:transparent}
+table.leaderBoard tr{color:$darkPowerColor}
+table.leaderBoard tr td.donorAmount{color:$darkPowerColor}
+table.leaderBoard tr.even,table.leaderBoard tr.even td.rank,table.leaderBoard tr.odd td,table.leaderBoard tr.odd td.rank{background-color:transparent}
+table.leaderBoard tr.odd,table.leaderBoard tr.odd td{background-color:#eaf5e2 !important}
+table.leaderBoard tr.even,table.leaderBoard tr.even td{background-color:#ddefcf !important}
+table.leaderBoard tr.star td.rank{background:url(http://media.razoo.com/media/givemn/GTMD12/images/icon-star.png) no-repeat left center}
+table.leaderBoard td.rank,table.leaderBoard td.donorCount,table.leaderBoard td .donorAmount{font-size:15px;
+color:$darkPowerColor}
+table.leaderBoard td.rank{background-color:transparent;
+color:$darkPowerColor;
+width:50px;
+text-align:right;
+padding-right:5px}
+table.leaderBoard td.rank h3{color:$darkPowerColor;
+padding:0px 0px 0px 25px}
+table.leaderBoard td.orgName{padding:5px 25px 5px 10px}
+table.leaderBoard td.orgName h3 a,table.leaderBoard td.orgName h3 a:link{color:$darkPowerColor;
+text-decoration:none}
+table.leaderBoard td.orgName h3 a:visited{color:#53320f;
+text-decoration:none}
+table.leaderBoard td.orgName h3 a:hover{color:#082f5a;
+text-decoration:underline}
+table.leaderBoard td,table.leaderBoard td.orgName{height:auto;
+padding-top:5px;
+padding-bottom:5px}
+table.leaderBoard tfoot,table.leaderBoard tfoot th{background-color:#f8fcf5}
+table.leaderBoard tfoot tr{background-color:transparent}
+table.leaderBoard tfoot tr.left{padding:15px 0px 10px 15px}
+table.leaderBoard tfoot tr.right{padding:15px 0 10px 0;
+color:$darkPowerColor;
+font-size:12px}
+table.leaderBoard tfoot a,table.leaderBoard tfoot a:hover,table.leaderBoard tfoot a:visited{color:$darkPowerColor;
+font-size:12px;
+text-decoration:none}
+table.leaderBoard tfoot a:hover{text-decoration:underline}
+table.leaderBoard tfoot .org_leaderboard_filter{position:relative}
+table.leaderBoard tfoot .filter_org_name{float:left;
+width:130px;
+height:15px;
+padding:3px 5px;
+line-height:15px;
+font-size:12px;
+margin:0 5px 0 10px}
+table.leaderBoard tfoot .clear_filter,table.leaderBoard tfoot .submit_filter{display:block;
+float:left;
+margin:0 5px 0 0;
+background:#efefef;
+height:24px;
+line-height:24px;
+padding:0px 5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+border:1px solid #ccc;
+cursor:pointer}
+table.leaderBoard tfoot .clear_filter:hover,table.leaderBoard tfoot .submit_filter:hover{text-decoration:none;
+background:#dedede}
+table.leaderBoard tfoot th{position:relative}
+table.leaderBoard tfoot .links{position:relative;
+padding:0;
+line-height:24px}
+table.leaderBoard tfoot .links .page_numbers{margin:0 10px}
+table.leaderBoard tfoot .links .links span.prev,table.leaderBoard tfoot .links .links span.next{color:#ddd}
+table.leaderBoard tfoot .links .links a.prev,table.leaderBoard tfoot .links .links a.next{color:#854b0b;
+text-decoration:underline}
+
+*/
+
+#gd-content .row{width:590px;
+max-width:100%;
+min-width:330px;
+margin:0 auto}
+#gd-content .row .row{width:auto;
+max-width:none;
+min-width:0;
+margin:0 -15px}
+#gd-content .row.collapse .column,#gd-content .row.collapse .columns{padding:0}
+#gd-content .row .row{width:auto;
+max-width:none;
+min-width:0;
+margin:0 -15px}
+#gd-content .row .row.collapse{margin:0}
+#gd-content .column,#gd-content .columns{float:left;
+min-height:1px;
+padding:0 15px;
+position:relative}
+#gd-content .column.centered,#gd-content .columns.centered{float:none;
+margin:0 auto}
+#gd-content [class*="column"] + [class*="column"]:last-child{float:right}
+#gd-content [class*="column"] + [class*="column"].end{float:left}
+#gd-content .one,#gd-content .row .one{width:16.66667%}
+#gd-content .two,#gd-content .row .two{width:33.33333%}
+#gd-content .three,#gd-content .row .three{width:50%}
+#gd-content .four,#gd-content .row .four{width:66.66667%}
+#gd-content .five,#gd-content .row .five{width:83.33333%}
+#gd-content .six,#gd-content .row .six{width:100%}
+#gd-content .row .offset-by-one{margin-left:16.66667%}
+#gd-content .row .offset-by-two{margin-left:33.33333%}
+#gd-content .row .offset-by-three{margin-left:50%}
+#gd-content .row .offset-by-four{margin-left:66.66667%}
+#gd-content .push-two{left:33.33333%}
+#gd-content .pull-two{right:33.33333%}
+#gd-content .push-three{left:50%}
+#gd-content .pull-three{right:50%}
+#gd-content .push-four{left:66.66667%}
+#gd-content .pull-four{right:66.66667%}
+#gd-content img,#gd-content object,#gd-content embed{max-width:100%;
+height:auto}
+#gd-content object,#gd-content embed{height:100%}
+#gd-content img{-ms-interpolation-mode:bicubic}
+#gd-content #map_canvas img,#gd-content .map_canvas img{max-width:none!important}
+#gd-content .row{*zoom:1}
+#gd-content .row:before,#gd-content .row:after{content:"";
+display:table}
+#gd-content .row:after{clear:both}
+#gd-sidebar .row{width:275px;
+max-width:100%;
+min-width:275px;
+margin:0 auto}
+#gd-sidebar .row .row{width:auto;
+max-width:none;
+min-width:0;
+margin:0 -15px}
+#gd-sidebar .row.collapse .column,#gd-sidebar .row.collapse .columns{padding:0}
+#gd-sidebar .row .row{width:auto;
+max-width:none;
+min-width:0;
+margin:0 -15px}
+#gd-sidebar .row .row.collapse{margin:0}
+#gd-sidebar .column,#gd-sidebar .columns{float:left;
+min-height:1px;
+padding:0 15px;
+position:relative}
+#gd-sidebar .column.centered,#gd-sidebar .columns.centered{float:none;
+margin:0 auto}
+#gd-sidebar [class*="column"] + [class*="column"]:last-child{float:right}
+#gd-sidebar [class*="column"] + [class*="column"].end{float:left}
+#gd-sidebar .one,#gd-sidebar .row .one{width:16.66667%}
+#gd-sidebar .two,#gd-sidebar .row .two{width:33.33333%}
+#gd-sidebar .three,#gd-sidebar .row .three{width:50%}
+#gd-sidebar .four,#gd-sidebar .row .four{width:66.66667%}
+#gd-sidebar .five,#gd-sidebar .row .five{width:83.33333%}
+#gd-sidebar .six,#gd-sidebar .row .six{width:100%}
+#gd-sidebar .row .offset-by-one{margin-left:16.66667%}
+#gd-sidebar .row .offset-by-two{margin-left:33.33333%}
+#gd-sidebar .row .offset-by-three{margin-left:50%}
+#gd-sidebar .row .offset-by-four{margin-left:66.66667%}
+#gd-sidebar .push-two{left:33.33333%}
+#gd-sidebar .pull-two{right:33.33333%}
+#gd-sidebar .push-three{left:50%}
+#gd-sidebar .pull-three{right:50%}
+#gd-sidebar .push-four{left:66.66667%}
+#gd-sidebar .pull-four{right:66.66667%}
+#gd-sidebar img,#gd-sidebar object,#gd-sidebar embed{max-width:100%;
+height:auto}
+#gd-sidebar object,#gd-sidebar embed{height:100%}
+#gd-sidebar img{-ms-interpolation-mode:bicubic}
+#gd-sidebar #map_canvas img,#gd-sidebar .map_canvas img{max-width:none!important}
+#gd-sidebar .row{*zoom:1}
+#gd-sidebar .row:before,#gd-sidebar .row:after{content:"";
+display:table}
+#gd-sidebar .row:after{clear:both}
+
+.container {
+  margin-bottom: -20px;
+ }
+.flat-button.color {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  background-color: $powerColor;
+  border: none;
+  margin-left:0;
+  text-decoration:none !important;
+ }
+ .flat-button.color a{
+	 color:#ffffff;
+	 text-decoration:none;
+	 border:none;
+ }
+ .flat-button.color a:link{
+	 color:#ffffff;
+	 text-decoration:none;
+	 border:none;
+ }
+ .flat-button.color a:visited{
+	 color:#ffffff;
+	 text-decoration:none;
+	 border:none;
+ }
+  .flat-button.color:hover {
+    color: #ffffff !important;
+    background-color: $powerColorHover;
+    border: none;
+ }
+.gd-header-wrapper, .nav-wrapper {
+  width: 100%;
+ }
+      #gd-header .gd-logo {
+        background-image: url('http://downloads.razoo.com/media/givemn/GTMD13/images/event-logo-horizontal_sm.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 149px;
+        width: 330px;
+        margin: 0;
+        border: none;
+		position: relative;
+		bottom: 370px;
+		left: 310px;
+ }
+    #gd-search .input-container {
+	float: left;
+	display: block;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding-top: 8px;
+	position: relative;
+	top: -310px;
+	left: -20px;
+ }
+      #gd-search .input-container #search {
+        height: 45px;
+        width: 210px;
+        font-size: 20px;
+        padding-left: 15px;
+        margin-bottom: 0;
+        opacity: .80;
+        filter: alpha(opacity=80);
+        filter: “alpha(opacity=80) ”;
+  	    -webkit-border-radius:10px;
+	    -moz-border-radius:10px;
+        border-radius:10px;
+		border:none;
+		float:left;
+}
+        #gd-search .input-container #search:focus {
+          opacity: 100;
+          filter: alpha(opacity=100);
+          filter: “alpha(opacity=100) ”;
+ }
+      #gd-search .input-container #img-btn {
+        width: 55px;
+        height: 55px;
+        padding: 0px !important;
+        margin-left: 5px;
+        background-image: url(http://downloads.razoo.com/media/givemn/GTMD13/images/search-glass-white.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: $powerColor;
+	    -webkit-border-radius:10px;
+	    -moz-border-radius:10px;
+	    border-radius:10px;
+		border:none;
+		color:transparent;
+		display: block;
+		float: right;
+}
+    #gd-header .btn-white {
+      background-color: #ffffff;
+      color: #333 !important;
+      display: inline-block ;
+      padding: 20px 30px;
+      font-size: 26px;
+      line-height: 30px;
+      font-weight: 400;
+      cursor: pointer;
+      -moz-border-radius: 40px;
+      -webkit-border-radius: 40px;
+      border-radius: 40px;
+      opacity: .80;
+      filter: alpha(opacity=80);
+      filter: “alpha(opacity=80) ”;
+      float: right;
+      margin: 0;
+	  position: relative;
+	  top: -310px;
+	  right: -15px;
+}
+      #gd-header .btn-white a {
+        text-decoration: none;
+		color:#333 !important;
+ }
+      #gd-header .btn-white:hover {
+        text-decoration: none !important;
+        background: #ffffff;
+        color: #000 !important;
+        opacity: 100;
+        filter: alpha(opacity=100);
+        filter: “alpha(opacity=100) ”;
+ }
+.nav-wrapper .gd-nav {
+  background-color: none;
+  width: 100%;
+  margin: 365px 0 1px 0;
+  padding-bottom: 3px;
+  font-size:14px;
+ }
+  .nav-wrapper .gd-nav ul {
+    text-align: center;
+ }
+  .nav-wrapper .gd-nav ul li {
+    display: inline-block;
+    padding: 10px 15px 0 15px;
+    font-size: 1.1em;
+ }
+    .nav-wrapper .gd-nav ul li a {
+      color: #fff;
+	  text-decoration:none;
+	  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+ }
+      .nav-wrapper .gd-nav ul li a:hover {
+        color: #fff !important;
+		text-decoration:underline;
+ }
+.content-section {
+  width: 960px;
+  background-color: white;
+  padding: 10px 0 0 10px;
+  margin-bottom: -20px;
+ }
+.main-content {
+  margin-right: 15px;
+ }
+.main-bottom {
+  margin-left: 0 !important;
+  text-align: left;
+ }
+  .main-bottom .row {
+    margin-left: 0;
+ }
+  .main-bottom img {
+    padding: 10px 5px 5px 0px;
+ }
+  .main-bottom img:last-child {
+    padding-right: 0px;
+ }
+  .main-bottom h3 {
+    margin-top: -10px;
+ }
+.sidebar {
+  padding: 10px 10px 10px 20px;
+  margin: 0;
+  border-left: 1px solid #efefef;
+ }
+  .sidebar h3 {
+    margin-top: -5px;
+ }
+  .sidebar .row {
+    margin-left: 0;
+ }
+.social {
+  padding-bottom: 10px;
+  margin-top: -30px;
+ }
+.razooBtn {
+  background: rgba(255, 255, 255, 0.5) url(http://assets0.razoo.com/assets/brands/1/GivingDay-ellie-clear.png) no-repeat center center;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  display: block;
+  height: 100px;
+  text-indent: -4000px;
+  margin-top:-30px;
+ }
+#gd-timer {
+	width: 280px;
+	font-size: 40px;
+	padding: 0 20px;
+	font-family:Lato, Arial, Helvetica, sans-serif;
+	font-weight:300;
+	height:100px;
+	position:absolute;
+	right:305px;
+	top:-120px;
+}
+  #gd-timer .starts {
+    color: #fff;
+    font-size: .4em;
+    font-weight: 400;
+	margin-left:10px;
+ }
+  #gd-timer #t7_timer {
+	font-family:Lato, Arial, Helvetica, sans-serif;
+	font-weight:300;
+    background: none;
+    color: #fff;
+    position: relative;
+ }
+    #gd-timer #t7_timer #t7_vals {
+      font-family:Lato, Arial, Helvetica, sans-serif;
+	  font-weight:300;
+	  white-space: nowrap;
+      letter-spacing: 0;
+      text-align: center;
+ }
+      #gd-timer #t7_timer #t7_vals span.d {
+        position: relative;
+        font-weight: 400;
+        margin-right: 5px;
+        color: #fff;
+ }
+      #gd-timer #t7_timer #t7_vals span.l {
+        position: absolute;
+        bottom: -1.2em;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 0.30em;
+        color: #fff;
+        font-weight: 400;
+        text-transform: capitalize;
+ }
+      #gd-timer #t7_timer #t7_vals span.s {
+        padding: 0 4px;
+        font-size: 1em;
+        color: #fff;
+ }
+#gd-stats {
+  font-size: 40px;
+  float: left;
+  color: #fff;
+  bottom: 305px;
+  width: 300px !important;
+  left: 675px;
+  background-color: transparent !important;
+  border: none !important;
+ }
+  #gd-stats div {
+    float: left;
+    white-space: nowrap;
+    position: relative;
+    min-width: 184px;
+ }
+  #gd-stats div strong {
+	white-space: nowrap;
+	line-height: 0px;
+	padding-bottom: 10px;
+	color: white;
+	position: absolute;
+	top: 0em;
+	left: 11px;
+	font-weight: 600;
+ }
+  #gd-stats div em {
+    margin-top: 15px;
+	color: white;
+	font-style: normal;
+	display: block;
+	margin-right: 40px;
+	font-weight:600;
+ }
+  #gd-stats div.dollars {
+    font-weight: 300;
+	color:#fff !important;
+ }
+    #gd-stats div.dollars strong {
+      font-size: 18px;
+	  color: #fff !important;
+	  font-weight:600;
+ }
+  #gd-stats div.donors {
+    position: relative;
+    bottom: -10px;
+    left: -10px;
+    display: inline-block;
+ }
+    #gd-stats div.donors strong, #gd-stats div.donors em {
+      font-size: 14px;
+      display: inline-block;
+      font-style: normal;
+      padding: 0;
+      margin: 15px;
+	  font-weight:600;
+ }
+  #gd-stats div.donations {
+    position: absolute;
+    bottom: -65px;
+    left: -10px;
+    height: 20px;
+}
+    #gd-stats div.donations strong, #gd-stats div.donations em {
+      font-size: 14px;
+      display: inline-block;
+      font-style: normal;
+      padding: 0;
+      margin: 15px;
+	  font-weight:600;
+ }
+
+.rzo-gd-hero {
+	width:auto;
+	height:370px;
+	overflow:hidden;
+	text-align:center;
+	margin-top:-100px;
+}
+.rzo-steps {
+	width: 980px;
+	margin: 110px auto;
+	position: relative;
+	z-index: 999;
+}
+.social-media {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  float: left;
+  background: url('http://assets2.razoo.com/images/buttons/social_sprite.png');
+}
+  .social-media:hover {
+    opacity: .5;
+    cursor: pointer;
+  }
+  .social-media a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+.facebook {
+  background-position:0px 0px;
+}
+
+.twitter {
+  background-position:-32px 0;
+}
+
+.google-plus {
+  background-position: -63px 0;
+}
+
+.e-mail {
+  background-position: -96px 0;
+}
+.green {
+	background: $powerColor !important;
+	border-radius: 10px;
+	text-align: center;
+	color: #fff;
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 11px;
+	border-radius: 11px;
+	width: 243px;
+	left: 30px;
+	padding: 10px !important;
+	margin-top: 20px;
+	font-size: 1.3em;
+	font-weight: 300;
+}
+.green h4 {
+	text-align: center;
+	color: #fff;
+	font-size: 2.3em;
+	font-weight: 300;
+	margin-top: -20px;
+}
+.green-inset {
+	border: 3px solid #81bb31;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:15px;
+}
+/*remove header from main pages*/
+.header {
+    color: #509500; /*matt*/
+    background-color: #fff;/*matt*/
+    background-position: center -42px; /*matt*/
+    background-image:none !important;/*matt*/
+	height:20px !important;
+}
+.header .nav .donate, .header .nav .fundraise, .header .nav .search {
+	 display:none;
+}
+.home .logo {
+    display:none;
+}
+.about-donation p{font-size:12px;}
+.ge2.leaderBoard tfoot .links {
+	width: 210px;
+}
+.ge2.leaderBoard tbody tr td.donorCount, .ge2.leaderBoard tbody tr th.donorCount, .ge2.leaderBoard tbody tr td.donorAmount, .ge2.leaderBoard tbody tr th.donorAmount {
+	color: #396600;
+	font-weight:normal !important;
+	font-size:15px;
+	font-style: normal !important;
+}
+.ge2.leaderBoard tbody tr h3 {
+	font-size:18px;
+}
+.ge2.leaderBoard thead tr th.donorCount, .ge2.leaderBoard thead tr th.donorAmount {
+	font-weight:bold;
+}
+
+
+#gd-header h1 {
+position: absolute;
+z-index: 100;
+top: 40px;
+left: 20px;
+}
+#gd-header .funds {
+	position: absolute;
+	top: 165px;
+	left: 20px;
+	color: #8CC63F;
+	font-size: 18px;
+}
+#gd-header .funds strong {
+	font-size: 34px;
+	color: #0F0E61;
+}
+
+
+
+
